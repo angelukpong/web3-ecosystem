@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice page</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body style="margin-bottom: 150px">
+    <h1 style="font-size: 10vw;"><ins>Practice page</ins></h1>
+
+    <!--form-->
+    <form action="">
+      <div>
+        <label for="firstName">First name</label>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="First name"
+          title="Enter your first name"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="lastName">Last name</label>
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder="Last name"
+          title="Enter your last name"
+        />
+      </div>
+      <br />
+
+      <div>
+        <input type="reset" name="" placeholder="" value="Reset" />
+        <button type="reset">Reset-btn</button>
+      </div>
+
+      <br>
+
+      <div>
+        <input type="submit" name="" placeholder="" value="Submit" />
+        <button type="submit">Submit-btn</button>
+      </div>
+    </form>
+
+    <!--buttons-->
+    <div>
+      <p id="helloWorld">Hello world</p>
+      <button onclick="sayHello()">click me</button>
+    </div>
+
+    <!--Audio player-->
+    <audio controls>
+      <source src="assets/audio/Gran Sentimiento - Luna Cantina.mp3" />
+    </audio>
+    <!--video player-->
+    <video controls width="300">
+      <source src="assets/video/Learn HTML in 1 hour 🌎.mp4" />
+    </video>
+    <!--pictures-->
+    <picture>
+        <source srcset="/assets/images/profile/my-passport-3.jpg" width="300" media="(min-width: 600px)">
+        <img src="assets/images/background/blockchain1.png" alt="" width="500">
+    </picture>
+
+    <!--Store opening hours-->
+    <table bgcolor="dodgerblue" width="100%">
+      <caption>
+        Opening hours
+      </caption>
+      <tr bgcolor="pink" align="">
+        <th>Day</th>
+        <th>Open</th>
+        <th>Close</th>
+      </tr>
+      <tr>
+        <td>Sunday</td>
+        <td>closed</td>
+        <td>Closed</td>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td>7am</td>
+        <td>10pm</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>7am</td>
+        <td>10pm</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>7am</td>
+        <td>10pm</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>7am</td>
+        <td>10pm</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>7am</td>
+        <td>10pm</td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td>7am</td>
+        <td>10pm</td>
+      </tr>
+    </table>
+
+    <!--iframe-->
+    <iframe
+      src="my-career-path.html"
+      title="youtube"
+      width="500"
+      height="100"
+      style="border: none"
+    ></iframe>
+
+    <!--flex container-->
+    <div class="flex-container" style="display: flex;">
+        <div style="background-color: blue;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus non rerum fuga odit voluptatem tempore eos aperiam. Temporibus voluptatem ea numquam assumenda necessitatibus sapiente, eligendi a libero fuga doloribus sunt?</div>
+        <div style="background-color: green;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus non rerum fuga odit voluptatem tempore eos aperiam. Temporibus voluptatem ea numquam assumenda necessitatibus sapiente, eligendi a libero fuga doloribus sunt?</div>
+        <div style="background-color: yellowgreen;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus non rerum fuga odit voluptatem tempore eos aperiam. Temporibus voluptatem ea numquam assumenda necessitatibus sapiente, eligendi a libero fuga doloribus sunt?</div>
+    </div>
+
+    <!--grid container-->
+    <div class="grid-container" style="display: grid; grid-template-columns: 33% 33% 33%; background-color: dodgerblue;">
+        <div style="background-color: blue; margin: 15px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus non rerum fuga odit voluptatem tempore eos aperiam. Temporibus voluptatem ea numquam assumenda necessitatibus sapiente, eligendi a libero fuga doloribus sunt?</div>
+        <div style="background-color: green; margin: 15px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus non rerum fuga odit voluptatem tempore eos aperiam. Temporibus voluptatem ea numquam assumenda necessitatibus sapiente, eligendi a libero fuga doloribus sunt?</div>
+        <div style="background-color: yellowgreen; margin: 15px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus non rerum fuga odit voluptatem tempore eos aperiam. Temporibus voluptatem ea numquam assumenda necessitatibus sapiente, eligendi a libero fuga doloribus sunt?</div>
+    </div>
+
+
+
+    <!--Script-->
+
+    <script>
+      function sayHello() {
+        alert("Hello");
+        console.log("Hello console");
+        document.getElementById("helloWorld").innerHTML = "Hello Angel";
+        document.getElementById('helloWorld').style.fontSize = "30px";
+        document.getElementById('helloWorld').style.color = "red";
+        document.getElementById('helloWorld').style.fontWeight = "bold";
+        document.getElementById('helloWorld').style.textDecoration = "underline";
+      }
+    </script>
+  </body>
+</html>
